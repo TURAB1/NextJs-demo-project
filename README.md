@@ -1,7 +1,4 @@
-## Next.js Master Class
-This repo contains all the course files for the Next.js Master Class on Net Ninja Pro. There is a branch for every lesson. Select the lesson you need from the branch dropdown.
 
-Visit [Net Ninja Pro](https://netninja.dev) to view this course and many more.
 
 ## Getting Started with the Project
 
