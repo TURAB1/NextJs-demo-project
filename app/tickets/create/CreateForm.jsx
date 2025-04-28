@@ -9,7 +9,7 @@ export default function CreateForm() {
 
   const [title, setTitle] = useState('')
   const [body, setBody] = useState('')
-  const [type, settype] = useState('low')
+  const [type, setType] = useState('Economy')
   const [isLoading, setIsLoading] = useState(false)
 
   const handleSubmit = async (e)  => {
@@ -53,12 +53,12 @@ export default function CreateForm() {
       <label>
         <span>Type:</span>
         <select 
-          onChange={(e) => settype(e.target.value)}
+          onChange={(e) => setType(e.target.value)}
           value={type}
         >
-          <option value="Economy Class">Economy Class</option>
-          <option value="Business Class">Business Class</option>
-          <option value="First Class">First Class</option>
+          <option value="Economy">Economy Class</option>
+          <option value="Business">Business Class</option>
+          <option value="First">First Class</option>
         </select>
       </label>
       <button 

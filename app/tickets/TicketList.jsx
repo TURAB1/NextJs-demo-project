@@ -22,7 +22,7 @@ export default async function TicketList() {
             <h3>{ticket.title}</h3>
             <p>{ticket.body.slice(0, 200)}...</p>
             <div className={`pill ${ticket.type}`}>
-              {ticket.type} type
+              {ticket.type} Class
             </div>
           </Link>
         </div>

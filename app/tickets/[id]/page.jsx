@@ -42,7 +42,7 @@ export default async function TicketDetails({ params }) {
         <small>Created by {ticket.user_email}</small>
         <p>{ticket.body}</p>
         <div className={`pill ${ticket.type}`}>
-          {ticket.type} type
+          {ticket.type} Class
         </div>
       </div>
     </main>
