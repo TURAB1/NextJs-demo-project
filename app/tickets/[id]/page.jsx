@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation"
-import { BASE_API_URL } from "utils/constants"
+import { BASE_API_URL } from "../../utils/constants"
 
 export const dynamicParams = true // default val = true
 
