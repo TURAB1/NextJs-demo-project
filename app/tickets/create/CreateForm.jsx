@@ -9,14 +9,14 @@ export default function CreateForm() {
 
   const [title, setTitle] = useState('')
   const [body, setBody] = useState('')
-  const [priority, setPriority] = useState('low')
+  const [type, settype] = useState('low')
   const [isLoading, setIsLoading] = useState(false)
 
   const handleSubmit = async (e)  => {
     e.preventDefault()
     setIsLoading(true)
 
-    const newTicket = { title, body, priority, user_email: 'chris@example.com' }
+    const newTicket = { title, body, type, user_email: 'chris@example.com' }
 
     const res = await fetch(`${BASE_API_URL}/tickets`, {
       method: "POST",
@@ -51,14 +51,14 @@ export default function CreateForm() {
         />
       </label>
       <label>
-        <span>Priority:</span>
+        <span>Type:</span>
         <select 
-          onChange={(e) => setPriority(e.target.value)}
-          value={priority}
+          onChange={(e) => settype(e.target.value)}
+          value={type}
         >
-          <option value="low">Low Priority</option>
-          <option value="medium">Medium Priority</option>
-          <option value="high">High Priority</option>
+          <option value="Economy Class">Economy Class</option>
+          <option value="Business Class">Business Class</option>
+          <option value="First Class">First Class</option>
         </select>
       </label>
       <button 
