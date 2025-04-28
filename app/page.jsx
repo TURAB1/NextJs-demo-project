@@ -2,7 +2,6 @@ import Link from 'next/link'
 // import { BASE_API_URL } from "./utils/constants"
 
 export default function Home() {
-  return(<>test</>)
   // if(!BASE_API_URL) {
   //   return null
   // }
@@ -29,4 +28,5 @@ export default function Home() {
   //     </div>
   //   </main>
   // )
+  return(<>test</>)
 }
