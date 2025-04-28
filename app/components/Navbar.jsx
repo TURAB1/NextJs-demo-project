@@ -13,8 +13,8 @@ export default function Navbar() {
         quality={100}
       />
       <h1>Cheap Tickets</h1>
-      {/* <Link href="/">Dashboard</Link>
-      <Link href="/tickets">Tickets</Link> */}
+      <Link href="/">Dashboard</Link>
+      <Link href="/tickets">Tickets</Link>
     </nav>
   )
 }
