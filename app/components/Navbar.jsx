@@ -12,7 +12,7 @@ export default function Navbar() {
         placeholder='blur'
         quality={100}
       />
-      <h1>Dojo Helpdesk</h1>
+      <h1>Cheap Tickets</h1>
       <Link href="/">Dashboard</Link>
       <Link href="/tickets">Tickets</Link>
     </nav>

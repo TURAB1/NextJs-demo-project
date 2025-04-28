@@ -15,7 +15,7 @@ export default function CreateForm() {
     e.preventDefault()
     setIsLoading(true)
 
-    const newTicket = { title, body, priority, user_email: 'mario@netninja.dev' }
+    const newTicket = { title, body, priority, user_email: 'chris@example.com' }
 
     const res = await fetch('http://localhost:4000/tickets', {
       method: "POST",
@@ -42,7 +42,7 @@ export default function CreateForm() {
         />
       </label>
       <label>
-        <span>Title:</span>
+        <span>Details:</span>
         <textarea
           required
           onChange={(e) => setBody(e.target.value)}
