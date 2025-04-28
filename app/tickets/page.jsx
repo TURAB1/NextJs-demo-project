@@ -4,6 +4,9 @@ import Loading from "../loading"
 import Link from "next/link"
 
 export default function Tickets() {
+  if(!process.env.NEXT_PUBLIC_BASE_API_URL) {
+    return null
+  }
   return (
     <main>
       <nav>
