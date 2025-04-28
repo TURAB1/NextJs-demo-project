@@ -1,7 +1,8 @@
 import Link from "next/link"
+import { BASE_API_URL } from "../utils/constants"
 
 async function getTickets() {
-  const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_API_URL}/tickets`, {
+  const res = await fetch(`${BASE_API_URL}/tickets`, {
     next: {
       revalidate: 0 // use 0 to opt out of using cache
     }

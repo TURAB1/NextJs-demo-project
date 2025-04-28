@@ -2,6 +2,7 @@
 
 import { useRouter } from "next/navigation"
 import { useState } from "react"
+import { BASE_API_URL } from "../../utils/constants"
 
 export default function CreateForm() {
   const router = useRouter()
@@ -17,7 +18,7 @@ export default function CreateForm() {
 
     const newTicket = { title, body, priority, user_email: 'chris@example.com' }
 
-    const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_API_URL}/tickets`, {
+    const res = await fetch(`${BASE_API_URL}/tickets`, {
       method: "POST",
       headers: {"Content-Type": "application/json"},
       body: JSON.stringify(newTicket)
